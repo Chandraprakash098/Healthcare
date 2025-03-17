@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/tasks/';
+const API_URL = `${process.env.REACT_APP_API_URL}/api/tasks/`;
 
 // Create new task
 const createTask = async (taskData, token) => {
